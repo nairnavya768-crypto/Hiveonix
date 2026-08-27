@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', 'DM Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #20221F;
+    background-color: #FAF6E8;
+    background-image: 
+      radial-gradient(circle at 10% 12%, rgba(246, 231, 161, 0.35) 0%, transparent 40%),
+      radial-gradient(circle at 90% 88%, rgba(235, 194, 98, 0.22) 0%, transparent 45%),
+      radial-gradient(rgba(217, 164, 65, 0.07) 1px, transparent 1px);
+    background-size: auto, auto, 24px 24px;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+/* Radiant Butter Yellow Ambient Canvas */
+.bg-butter-canvas {
+  background-color: #FAF6E8;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(246, 231, 161, 0.40) 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, rgba(229, 186, 85, 0.25) 0%, transparent 40%),
+    radial-gradient(rgba(217, 164, 65, 0.08) 1.2px, transparent 1.2px);
+  background-size: auto, auto, 24px 24px;
+  background-attachment: fixed;
+}
+
+/* Subtle Honeycomb Pattern */
+.bg-honeycomb {
+  background-color: #FAF6E8;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(254, 243, 199, 0.6) 0%, transparent 50%),
+    radial-gradient(rgba(217, 164, 65, 0.12) 1px, transparent 1px), 
+    radial-gradient(rgba(217, 164, 65, 0.08) 1px, #FAF6E8 1px);
+  background-size: 100% 100%, 24px 24px, 24px 24px;
+  background-position: 0 0, 0 0, 12px 12px;
+}
+
+.bg-honeycomb-subtle {
+  background-image: radial-gradient(rgba(217, 164, 65, 0.09) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Warm Golden Glow accents */
+.butter-glow {
+  box-shadow: 0 8px 32px -4px rgba(217, 164, 65, 0.16), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DFC8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9A441;
+}
