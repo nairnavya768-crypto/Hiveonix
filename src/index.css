@@ -1,3 +1,5 @@
+// Global design and background . Controls the overall fonts, colors, main background, honey-themed patterns, glow effects, and scrollbar styling.
+
 @import "tailwindcss";
 
 @layer base {
@@ -74,6 +76,7 @@
   background: #E5DFC8;
   border-radius: 9999px;
 }
+/*  When you hover your mouse over the scrollbar, its color changes to golden/yellow. */
 ::-webkit-scrollbar-thumb:hover {
   background: #D9A441;
 }
