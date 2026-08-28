@@ -1,9 +1,7 @@
-// Project configuration - Contains the project name, dependencies, scripts, and libraries needed to run the project. 
 
 {
   "name": "react-example",
   "private": true, 
-  /* Prevents the project from accidentally being published publicly as an npm package. */
   "version": "0.0.0",
   "type": "module",
   "scripts": {
