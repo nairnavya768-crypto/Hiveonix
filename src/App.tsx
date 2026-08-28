@@ -1,4 +1,5 @@
 // Main application controller. This is one of the most important files. It decides which page/dashboard the user sees based on their role.
+// the brain of the frontend
 import React, { useState } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
 import { Navbar } from './components/common/Navbar';
